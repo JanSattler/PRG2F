@@ -18,14 +18,31 @@ public class bonus {
             guesses[i] = sc.nextInt();
         }
 
-        for (int i = 0; i < guesses.length; i++) {
-            for (int j = 0; j < pickedNumbers.length; j++) {
-                if (guesses[i] == pickedNumbers[j]) {
 
-                }
+        int idk = 0;
+        System.out.print("Picked numbers:");
+        System.out.println(Arrays.toString(pickedNumbers));
+        System.out.println("Guesses: ");
+
+        for (int i = 0; i < pickedNumbers.length; i++) {
+            if (pickedNumbers[i] == guesses[i]) {
+                System.err.println(guesses[i]);
+                idk += 1;
+            } else {
+                System.out.println(guesses[i]);
+                idk += 1;
             }
         }
-        System.out.println("Picked numbers:");
-        System.out.print(Arrays.toString(pickedNumbers));
+
+        //for (int i = 0; i < pickedNumbers.length; i++) {
+        //    for (int j = 0; j < guesses.length; j++) {
+        //        if (guesses[j] == pickedNumbers[i]) {
+        //            System.err.println(guesses[j]);
+        //        } else {
+        //            System.out.println(guesses[j]);
+        //        }
+        //    }
+        //}
+
     }
 }
