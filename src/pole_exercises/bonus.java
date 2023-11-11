@@ -24,13 +24,26 @@ public class bonus {
         System.out.println(Arrays.toString(pickedNumbers));
         System.out.println("Guesses: ");
 
+        //for (int i = 0; i < pickedNumbers.length; i++) {
+        //    if (pickedNumbers[i] == guesses[i]) {
+        //        System.err.println(guesses[i]);
+        //        idk += 1;
+        //    } else {
+        //        System.out.println(guesses[i]);
+        //        idk += 1;
+        //    }
+        //}
+
+        int count = 0;
         for (int i = 0; i < pickedNumbers.length; i++) {
             if (pickedNumbers[i] == guesses[i]) {
                 System.err.println(guesses[i]);
-                idk += 1;
             } else {
                 System.out.println(guesses[i]);
-                idk += 1;
+            }
+            count++;
+            if (count == guesses.length) {
+                break;
             }
         }
 
