@@ -53,19 +53,21 @@ public class bonus {
 
         int count = 0;
         for (int i = 0; i < guesses.length; i++) {
-            boolean idkmore = false;
+            boolean correct = false;
             for (int j = 0; j < pickedNumbers.length; j++) {
                 if (guesses[i] == pickedNumbers[j]) {
                     System.err.println(guesses[i]);
                     count += 1;
-                    idkmore = true;
+                    correct = true;
                     break;
                 }
             }
-            if (!idkmore) {
+            if (!correct) {
                 System.out.println(guesses[i]);
             }
         }
+
+
         System.out.println("Soutěžící správně tipl čísel: "+count);
 
 
