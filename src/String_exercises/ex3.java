@@ -6,6 +6,7 @@ public class ex3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String oppositeCase = sc.nextLine();
+        StringBuilder newWord = new StringBuilder();
 
 
         for (int i = 0; i < (int)oppositeCase.length(); i++) {
@@ -13,10 +14,17 @@ public class ex3 {
                 //oppositeCase.charAt(i)
                 char znak = oppositeCase.charAt(i);
                 String znak2 = String.valueOf(znak);
-                znak2.toLowerCase();
+                znak2 = znak2.toLowerCase();
                 znak = znak2.charAt(0);
-                oppositeCase.charAt(i) = znak;
+                newWord.append(znak);
+            } else {
+                char znak = oppositeCase.charAt(i);
+                String znak2 = String.valueOf(znak);
+                znak2 = znak2.toUpperCase();
+                znak = znak2.charAt(0);
+                newWord.append(znak);
             }
         }
+        System.out.println(newWord);
     }
 }
