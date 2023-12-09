@@ -17,12 +17,15 @@ public class morseovka {
         String finalWord = "";
 
         for (int i = 0; i < (int)input.length(); i++) {
-            if (input.charAt(i) == letters[i].charAt(0)){   //jestli písmeno na indexu se rovná písmenu v poli
-                for (int j = 2; j < letters[i].length(); j++) {   //zapisuje znaky
-                    finalWord = finalWord + letters[i].charAt(j);
+            for (int k = 0; k < letters.length; k++) {
+                if (input.charAt(i) == letters[k].charAt(0)){   //jestli písmeno na indexu se rovná písmenu v poli
+                    for (int j = 2; j < letters[k].length(); j++) {   //zapisuje znaky
+                        finalWord = finalWord + letters[i].charAt(j);
+                    }
+                    finalWord = finalWord + " ";
                 }
-                finalWord = finalWord + " ";
             }
+
         }
 
         System.out.println(finalWord);
