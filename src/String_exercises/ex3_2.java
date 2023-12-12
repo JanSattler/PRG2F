@@ -15,7 +15,7 @@ public class ex3_2 {
                 char znak = oppositeCase.charAt(i);
                 String znak2 = String.valueOf(znak);
                 znak2 = znak2.toLowerCase();
-                znak = znak2.charAt(0);
+                znak = znak2.charAt(0);    //zybtečný
                 New = New + znak;
 
 

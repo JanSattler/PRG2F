@@ -9,7 +9,7 @@ public class ex2 {
         String slovo = sc.nextLine();
 
 
-        for (int i = 0; i < (int)slovo.length()-1; i++) {
+        for (int i = 0; i < (int)slovo.length()-1; i++) {   //-1 bcs pak by to spadlo když by to dojelo nakonec
             if (slovo.charAt(i) == slovo.charAt(i+1)){
                 System.out.println("Ano");
                 break;
