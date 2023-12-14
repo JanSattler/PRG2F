@@ -23,7 +23,7 @@ public class morseovka {
             for (int k = 0; k < letters.length; k++) {  //tenhle projíždí tu morzeovku to pole
 
                 if (input.charAt(i) == letters[k].charAt(0)){   //jestli písmeno na indexu se rovná písmenu v poli
-                    for (int j = 2; j < letters[k].length(); j++) {   //zapisuje znaky
+                    for (int j = 2; j < letters[k].length(); j++) {   //zapisuje znaky, 2 protože to má přeskočit písmeno a mezeru
                         finalWord = finalWord + letters[k].charAt(j);
                     }
                     finalWord = finalWord + " ";
