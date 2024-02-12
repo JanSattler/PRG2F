@@ -11,7 +11,7 @@ public class ex1 {
 
         System.out.println(numArray);
 
-        for (int i = numArray.size()-1; i >= 0; i--) {
+        for (int i = numArray.size()-1; i >= 0; i--) {      //větší nebo rovno nule protože by to jinak nevypsalo poslední prvek, a mínu jedna protože by to pak spadlo
             System.out.println(numArray.get(i));
         }
     }
